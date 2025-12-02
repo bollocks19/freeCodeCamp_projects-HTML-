@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">We will study your satisafction towards certain types of movies!</p>
+    
+      <legend>First:</legend>
+    <form id="survey-form">
+
+      <label for="name" id="name-label">Name
+      <input id="name" type="text" required placeholder="Full Name">
+       <label for="email" id="email-label">E-mail
+      <input id="email" type="email" required placeholder="example@field.com">
+
+       <label for="age" id="number-label">Age</label>
+      <input id="number" type="number" required placeholder="age" min="2" max="100">
+      
+     <label for="question" id="first_question">Which genre do you like?</label>
+      <select id="dropdown">
+        <option>Thriller</option>
+         <option>Drama</option>
+          <option>Romance</option>
+           <option>Horror</option>
+            <option>Science Fiction</option>
+             <option>Comedy</option>
+              </select>
+        
+
+         
+               <legend>Question</legend>
+               <label for="text" id="question">Do you like Dune?</label>
+               <input id="yes-option" type="radio" name="Dune" value="Dune">
+               <label for="yes-option" >Yes</label>
+               <input id="no-option" type="radio" name="Dune" value="Dune">
+               <label for="no-option" name="no-option">No</label>
+               <input id="maybe" type="radio" name="Dune" value="Dune">
+               <label for="maybe" name="maybe-option">Maybe</label>
+
+          
+             
+<fieldset>
+                 <legend> Favorite Movie </legend>
+                 <label for="question2" id="question2">What would you like to see more?</label>
+                 <input id="CGI" type="checkbox" value="CGI">
+                 <label for="CGI">CGI</label>
+                 <input id="plot-twists" type="checkbox" value="plot-twists">
+                 <label for="plot-twists">Plot Twists</label>
+                 <input id="famous-actors" type="checkbox" value="famous-actors">
+                 <label for="famous-actors">Famous Actors</label>
+                 <input id="animation" type="checkbox" value="animation">
+                 <label for="animation">Animation</label>
+                 <input id="real-emotion" type="checkbox" value="real-emotion">
+                 <label for="real-emotion">Real Emotion</label>
+                 <input id="uncut" type="checkbox" value="uncut">
+                 <label for="uncut">Uncut Footage</label>
+               </fieldset>
+
+                <label for="comments">Other Comments?</label>
+        <textarea cols="30" rows="10" name="comments" id="comments"></textarea>
+        <button id="submit" type="submit">Submit</button>
+             
+          
+      </form>
+      
+
+
+      
+  </body>
+</html>
